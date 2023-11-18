@@ -32,9 +32,11 @@ While we could employ relayers (which would still be trustless, but need externa
 
 SaferBridge is not a business, it is a public good. Outside of incentivizing the 3 steps above (which we hope L2s will subsidize in the future - see "The Future" section below), we designed SaferBridge to be completely 'free' for users outside of ammortized gas cost. The protocol itself will not charge any fee, there will not be any ponzi pretend governance token, and the contracts will be completely immutable without contract owners that can claim any excess surcharges.
 
-## Ammortized Transaction Fee 
+## Ammortized Cost Per User
 
 While calldata goes up linearly with the size of the batch, this the savings per user for bridging is atleast 38% cheaper per user (based on our extremely non scientific 10m test while running through this hackathon). As the batch size increases, the fee for each user drops. 
+
+At the very least, this is still better UX than each user needing to sign many messages and enter many URLs, to bridge by themselves.
 
 ## The future
 
