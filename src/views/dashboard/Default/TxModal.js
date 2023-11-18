@@ -13,6 +13,8 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import { green } from '@mui/material/colors';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import CelebrationIcon from '@mui/icons-material/Celebration';
+// import WaterDropIcon from '@mui/icons-material/WaterDrop';
 
 const style = {
   position: 'absolute',
@@ -150,7 +152,7 @@ export default function TransitionsModal(props) {
                             Step 3
                           </Typography>
                           <Typography id="transition-modal-description">
-                            L2 bridge withdrawal finalized + sent funds to other L2 Bridge <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /> <Button disabled variant="contained" color="primary">Claim</Button>
+                            L2 bridge withdrawal finalized, send funds to other L2 Bridge or wait for someone else to initialize <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /> <Button disabled variant="contained" color="primary">Claim</Button>
                           </Typography>
 
                           <Typography id="transition-modal-description" sx={{ mt: 2 }} variant="h4" component="h6">
@@ -171,7 +173,7 @@ export default function TransitionsModal(props) {
                             Step 6
                           </Typography>
                           <Typography id="transition-modal-description">
-                            Done! - All funds bridged & distributed <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /><RocketLaunchIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" />
+                            Done! All funds bridged & distributed <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /><RocketLaunchIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /><CelebrationIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /><CelebrationIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" />
                           </Typography>
 
                           {/* <Typography id="transition-modal-description" sx={{ mt: 2 }}>
