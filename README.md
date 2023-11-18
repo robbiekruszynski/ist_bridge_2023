@@ -23,7 +23,7 @@ Safer Bridge does not require any relayers. Unlike other cross-chain bridges, wh
 
 1. <b>Batch origin L2 -> L1</b> - Each person joining the batch pays an estimated gas fee + a surcharge incase gas price changes (+xx%). The last person joining the batch only pays estimated gas fee (no surcharge), and pushes the whole batch to the native L2 to L1 bridge. Effectively other users pre-pay for the extra cost incurred by the last person to join.
 2. <b>Claim on L1 -> Send to destination L2</b> - Any person in the batch can trigger the claim & move from the first L2 bridge contract to the next one. This step can be incentivized, or simply rely on socio-economic factors of who needs the funds first.
-3. Distribute assets on L2 - This is automatic & no manual interaction is needed. The L1 claim triggers L2 contract for distributing assets to batch members.
+3. Distribute assets on destination L2 - This is automatic & no manual interaction is needed. The L1 claim sends assets to destination L2 & triggers contract on said L2 to distribute bridged assets to batch members.
 <!-- The first person to claim the funds on the final location disburses all of the assets in the batch to all of the respective parties who were part of the batch. This step can be incentivized, or simply rely on socio-economic factors of who needs the funds first. -->
 
 While we could employ relayers (which would still be trustless, but need external actors), each of these steps were delibirately designed in SaferBridge to be user triggered and not rely on any external actors. The whole point of L2s was not to rely on cross-chain bridges or have additional trust assumptions. 'This is the way'.
