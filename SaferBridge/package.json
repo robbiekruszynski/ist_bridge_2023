@@ -1,8 +1,8 @@
 {
-  "name": "berry-free-material-react-cra",
+  "name": "saferbridge",
   "version": "3.3.2",
   "private": true,
-  "homepage": "https://berrydashboard.io/free",
+  "homepage": "https://saferbridge.zklumi.com/",
   "dependencies": {
     "@emotion/cache": "^11.9.3",
     "@emotion/react": "^11.9.3",
