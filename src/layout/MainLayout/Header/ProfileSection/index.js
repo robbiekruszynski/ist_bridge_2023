@@ -4,6 +4,8 @@ import { ethers } from 'ethers';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useTheme } from '@mui/material/styles';
+import WalletUtils from './walletUtils';
+
 import {
     Avatar,
     Box,
@@ -45,11 +47,7 @@ const ProfileSection = () => {
     const [open, setOpen] = useState(false);
 
     const anchorRef = useRef(null);
-
-    const handleWalletConnect = async () => {
-      // Implement wallet connection logic here
-      console.log('Connect to wallet');
-  };
+    
 
     const handleLogout = async () => {
         console.log('Logout');
@@ -86,6 +84,7 @@ const ProfileSection = () => {
 
   return (
     <>
+    <WalletUtils/>
       <Chip
         sx={{
           height: '48px',
