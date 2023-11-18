@@ -1,4 +1,5 @@
-<img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo.png">
+<img width="25%"  src="src/assets/images/logo.png">
+
 # SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
 # ViaDuck <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-duck-bg.png"> - Trust Minimized L2 Bridge -->
