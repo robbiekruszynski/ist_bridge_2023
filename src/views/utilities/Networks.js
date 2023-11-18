@@ -5,11 +5,12 @@ import zkSyncEraIcon from 'assets/images/icons/zkSyncEra.png';
 import zkSyncLiteIcon from 'assets/images/icons/zkSyncLite.png';
 import ArbitrumIcon from 'assets/images/icons/Arbitrum.svg';
 // import PolygonIcon from 'assets/images/icons/Polygonzkevm.png';
-import PolygonIcon from 'assets/images/icons/Polygon.svg';
-import OptimismIcon from 'assets/images/icons/Optimism.svg';
 import ScrollIcon from 'assets/images/icons/Scroll.png';
 import StarknetIcon from 'assets/images/icons/Starknet.png';
 import LineaIcon from 'assets/images/icons/Linea.png';
+import MantleIcon from 'assets/images/icons/Mantle.png';
+import PolygonIcon from 'assets/images/icons/Polygon.svg';
+import OptimismIcon from 'assets/images/icons/Optimism.svg';
 
 
 export const Networks = () => {
@@ -47,36 +48,6 @@ export const Networks = () => {
                 }
             }
         },
-        polygonzkevm: {
-            icon: PolygonIcon,
-            networkId: "",
-            label: "Polygon zkEVM",
-            colors: {
-                section: {
-                    primary: theme.palette.secondary.dark,
-                    primaryDark: theme.palette.secondary[800],
-                },
-                text: {
-                    primary: "#ffffff",
-                    primaryLight: theme.palette.secondary[200],
-                }
-            }
-        },
-        scroll: {
-            icon: ScrollIcon,
-            networkId: "",
-            label: "Scroll",
-            colors: {
-                section: {
-                    primary: brown[600],
-                    primaryDark: brown[800],
-                },
-                text: {
-                    primary: "#ffffff",
-                    primaryLight: brown[200],
-                }
-            }
-        },
         arbitrum: {
             icon: ArbitrumIcon,
             networkId: "",
@@ -92,18 +63,18 @@ export const Networks = () => {
                 }
             }
         },
-        optimism: {
-            icon: OptimismIcon,
+        scroll: {
+            icon: ScrollIcon,
             networkId: "",
-            label: "Optimism",
+            label: "Scroll",
             colors: {
                 section: {
-                    primary: red[700],
-                    primaryDark: red[900],
+                    primary: brown[600],
+                    primaryDark: brown[800],
                 },
                 text: {
                     primary: "#ffffff",
-                    primaryLight: red[300],
+                    primaryLight: brown[200],
                 }
             }
         },
@@ -134,6 +105,51 @@ export const Networks = () => {
                 text: {
                     primary: "#ffffff",
                     primaryLight: grey[200],
+                }
+            }
+        },
+        mantle: {
+            icon: MantleIcon,
+            networkId: "",
+            label: "Mantle",
+            colors: {
+                section: {
+                    primary: grey[700],
+                    primaryDark: grey[900],
+                },
+                text: {
+                    primary: "#ffffff",
+                    primaryLight: grey[300],
+                }
+            }
+        },
+        polygonzkevm: {
+            icon: PolygonIcon,
+            networkId: "",
+            label: "Polygon zkEVM",
+            colors: {
+                section: {
+                    primary: theme.palette.secondary.dark,
+                    primaryDark: theme.palette.secondary[800],
+                },
+                text: {
+                    primary: "#ffffff",
+                    primaryLight: theme.palette.secondary[200],
+                }
+            }
+        },
+        optimism: {
+            icon: OptimismIcon,
+            networkId: "",
+            label: "Optimism",
+            colors: {
+                section: {
+                    primary: red[700],
+                    primaryDark: red[900],
+                },
+                text: {
+                    primary: "#ffffff",
+                    primaryLight: red[300],
                 }
             }
         },

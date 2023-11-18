@@ -7,10 +7,15 @@ Unlike all other L2 to L2 cross chain bridges, SaferBridge transfers funds direc
 
 ## What's Wrong With Curren't 3rd Party L2 Bridges?
 
-If your bridge don't use the native bridges to go from L2 to L2, most 3rd party bridges have the same security assumptions as cross-chain bridges. Simply put, they are all more or less trusted shit. Please see <a href="https://www.youtube.com/watch?v=EAkOHyWPI4o" target="_blank">Daniel Lumi's speech from ETH CC for more information</a>.
+If your bridge don't use the native bridges to go from L2 to L2, most 3rd party bridges have the same security assumptions as cross-chain bridges. Simply put, they are all more or less trusted shit. Please see [Daniel Lumi's speech from ETH CC for more information](https://www.youtube.com/watch?v=EAkOHyWPI4o).
 
 ## 2 Transfer Modes
 
 In <b>Normal Speed</b> mode your transaction will be batched with 10 users. The bridging transaction will initiate automatically without a relayer when the batch fills up. This means you will only cost 1/10 of all of the normal gas fees of bridging safely from L2 -&gt; L1 -&gt; L2!
 
 In <b>Fast Speed</b> mode your transaction will submitted to the L2 bridge as soon as you make it. Any outstanding transactions in a batch will be submitted with yours. This means it will only cost you the remainder of the batch. Right now there are {Math.round( props.batchProgress / 10 )}/10 spots filled up in the batch, meaning you only have to pay {10 - Math.round( props.batchProgress / 10 )}/10 of all of the normal gas fees of bridging safely from L2 -&gt; L1 -&gt; L2!
+
+## 2 Asset Types
+
+For USDC we would use Circles native Cross-Chain Transfer Protocol (CCTP)</a>.
+
