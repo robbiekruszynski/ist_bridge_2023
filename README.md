@@ -1,11 +1,11 @@
-<img width="33%"  src="src/assets/images/logo.png">
+<img width="25%"  src="src/assets/images/logo.png">
 
 # SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
 # ViaDuck <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-duck-bg.png"> - Trust Minimized L2 Bridge -->
 Unlike all other L2 to L2 cross chain bridges, SaferBridge transfers funds directly via L1 using the L2s native message passing, and doesn't rely on any relayers or LPs. Additionally, because of it's design, you can always force your transaction, and don't have to trust any 3rd party.
 
-<img width="33%"  src="src/assets/images/readme/vitalik-clapping.gif">
+We did not build L2 ecosystems to use cross chain bridges, the whole point was to maintain trust assumptions.
 
 ## What's Wrong With Current 3rd Party L2 Bridges?
 
@@ -43,6 +43,8 @@ At the very least, this is still better UX than each user needing to sign many m
 We want L2s to fork this & build it into their native canonical bridges. While it is possible this bridge will need to remain external, this is not the future we hope for.
 
 Any of the above 3 steps that currently rely on incentivization or socio-economic considerations can be handled by the native L2 actors. It is in their benefit to vampire attack other protocols liquidity by subsidizing users to move liquidity to their L2 from another one, and it may also be in their benefit to provide users good user experience for moving funds away. Even if the former is only true, each protocol could subsidize users to move liquidity to their L2 from another one, and if every L2 adopts this method, moving in each direction would be 'free' outside of ammortized gas cost to users.
+
+<img width="33%"  src="src/assets/images/readme/vitalik-clapping.gif">
 
 ## Note On Centralized Asset Types
 
