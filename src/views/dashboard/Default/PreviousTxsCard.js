@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 // import { useState } from 'react';
 
 // material-ui
-// import { useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import { Button, CardActions, CardContent, Divider, Grid, Typography, LinearProgress } from '@mui/material';
 
 // project imports
@@ -23,7 +23,7 @@ import { blue } from '@mui/material/colors';
 // ==============================|| DASHBOARD DEFAULT - POPULAR CARD ||============================== //
 
 const PreviousTxsCard = (props, { isLoading }) => {
-//   const theme = useTheme();
+  const theme = useTheme();
 
   const progress = {
     PreviousTx0x1 : 66,
@@ -145,7 +145,7 @@ const PreviousTxsCard = (props, { isLoading }) => {
                       Polygon zkEVM -&gt; zkSync Era
                     </Typography>
                     <LinearProgress id="PreviousTx0x1" variant="determinate" value={progress['PreviousTx0x1']} sx={{height:"24px"}} />
-                    <TxModal tx="PreviousTx0x1" progress={progress['PreviousTx0x1']} networks={props.networks} />
+                    <TxModal tx="PreviousTx0x1" progress={progress['PreviousTx0x1']}  theme={theme} networks={props.networks} />
                   </Grid>
                 </Grid>
                 <Divider sx={{ my: 1.5 }} />
@@ -189,7 +189,7 @@ const PreviousTxsCard = (props, { isLoading }) => {
                     zkSync Era -&gt; Scroll
                     </Typography>
                     <LinearProgress id="PreviousTx0x2" variant="determinate" value={progress['PreviousTx0x2']} sx={{height:"24px"}} />
-                    <TxModal tx="PreviousTx0x2" progress={progress['PreviousTx0x2']} networks={props.networks} />
+                    <TxModal tx="PreviousTx0x2" progress={progress['PreviousTx0x2']} theme={theme} networks={props.networks} />
                   </Grid>
                 </Grid>
                 </Grid>
@@ -234,7 +234,7 @@ const PreviousTxsCard = (props, { isLoading }) => {
                     zkSync Lite -&gt; zkSync Era
                     </Typography>
                     <LinearProgress id="PreviousTx0x2" variant="determinate" value={progress['PreviousTx0x2']} sx={{height:"24px"}} />
-                    <TxModal tx="PreviousTx0x2" progress={progress['PreviousTx0x2']}  networks={props.networks} />
+                    <TxModal tx="PreviousTx0x2" progress={progress['PreviousTx0x2']}  theme={theme} networks={props.networks} />
                   </Grid>
                 </Grid>
                 </Grid>

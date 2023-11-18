@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {Grid} from '@mui/material';
 import { gridSpacing } from 'store/constant';
+import {LinearProgress} from '@mui/material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const style = {
   position: 'absolute',
@@ -28,9 +30,20 @@ export default function TransitionsModal(props) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const cardOneColor = props.networks['polygonzkevm'].colors.section.primary;
-  const cardTwoColor = props.networks['zksyncera'].colors.section.primary;
-  console.log(cardOneColor);
+  const sendAmount = 'Send '+'2.000'+' '+'ETH';
+
+  const cardFromColor = props.networks['arbitrum'].colors.section.primary;
+  const cardToColor = props.networks['scroll'].colors.section.primary;
+
+  const cardFromTextColor = props.networks['arbitrum'].colors.text.primary;
+  const cardToTextColor = props.networks['scroll'].colors.text.primary;
+
+  const cardFromTextLabel = props.networks['arbitrum'].label;
+  const cardToTextLabel = props.networks['scroll'].label;
+  // console.log(cardFromColor);
+
+  const styleForLinearProgressMove = `#method-fast-right-side-container #batch-status-progress-bar { background-color: ${props.theme.palette.warning.dark} } #batch-status-progress-bar { height: 30px; border-radius: 8px; } #batch-status-progress-bar > span:before { content:"Step 1/6"; text-align: right; padding-right: 24px;color: #fff; display: block; height: 30px; line-height: 30px; font-weight: bold; }`;
+    
 
 
   return (
@@ -52,37 +65,71 @@ export default function TransitionsModal(props) {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-              Text in a modal
-            </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-            - Step 1 “TX added to Batch”<br /> - Step 2 “Batch full - Sent batch to L2 bridge”<br /> - Step 3 “L2 bridge withdrawal finalized + sent funds to other L2 Bridge (NOTE, MAY REQUIRE CLAIM!! In beginning can pay percentage upchrage to user who claims, or to relayer)”<br /> - Step 4 “L2 bridge deposited funds to L2 escrow”<br />  - Step 5 “Funds ready to be claimed - Claim now or wait for someone else to initialize distribution of batch”<br />   - Step 6 “Funds ready to be claimed - Claim now or wait for someone else to initialize distribution of batch”
-            </Typography>
             <Grid container spacing={gridSpacing}>
               <Grid item xs={12}>
                 <Grid container spacing={gridSpacing} isLoading={props.isLoading}>
-                    <Grid item xs={12} lg={8} xl={9}>
-                        {/* <DashboardHeading /> */}
+                    <Grid item xs={12} >
+                      <Grid container spacing={gridSpacing} isLoading={props.isLoading}>
+                        <Grid item xs={12} md={1} sx={{textAlign:"center"}}>
+                        </Grid>
+                        <Grid item xs={12} md={10}style={{paddingBottom: "15px",paddingLeft: "0"}}>
+                          <Typography variant="h2" component="h3">
+                            {sendAmount}
+                          </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={1} sx={{textAlign:"center"}}>
+                        </Grid>
+                      </Grid>
                     </Grid>
                     <Grid item xs={12}>
                       <Grid container spacing={gridSpacing} isLoading={props.isLoading}>
-                        <Grid item xs={12} md={5}>
-                          <Box sx={{borderRadius:"50%",padding:"40px",textAlign:"center",display:"inline-block"}} style={{backgroundColor:{cardTwoColor}}}>
-                              Polygon zkEVM
+                        <Grid item xs={12} md={1} sx={{textAlign:"center"}}>
+                        </Grid>
+                        <Grid item xs={12} md={4} sx={{textAlign:"center"}}>
+                          <Box sx={{borderRadius:"50%",height:"150px",width:"150px",textAlign:"center",display:"inline-block",backgroundColor: cardFromColor}}>
+                              <Typography sx={{verticalAlign: "center",color: cardFromTextColor,fontWeight:"bold",paddingTop:"65px"}} variant="h4" component="h4">
+                                {cardFromTextLabel}
+                              </Typography>
+                          </Box>
+                          <Typography style={{paddingTop:'10px'}}>
+                            View Transaction
+                          </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={1} sx={{textAlign:"center"}}>
+                          <Box sx={{height:"150px",textAlign:"center",display:"inline-block",paddingTop:"57.5px"}}>
+                            {/* <svg data-testid="ArrowForwardIcon"></svg> */}
+                            <ArrowForwardIcon fontSize="large" />
+                              {/* {ArrowForwardIcon} */}
                           </Box>
                         </Grid>
-                        <Grid item xs={12} md={5}>
-                          <Box sx={{borderRadius:"50%",padding:"40px",textAlign:"center",display:"inline-block",backgroundColor:{ cardTwoColor }}}>
-                              zkSync Era
+                        <Grid item xs={12} md={4} sx={{textAlign:"center"}}>
+                          <Box sx={{borderRadius:"50%",height:"150px",width:"150px",textAlign:"center",display:"inline-block",backgroundColor: cardToColor}}>
+                              <Typography sx={{verticalAlign: "center",color: cardToTextColor,fontWeight:"bold",paddingTop:"65px"}} variant="h4" component="h4">
+                                {cardToTextLabel}
+                              </Typography>
                           </Box>
+                          <Typography style={{paddingTop:'10px'}}>
+                            View Transaction
+                          </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={1} sx={{textAlign:"center"}}>
                         </Grid>
                       
                       </Grid>
                     </Grid>
-                    <Grid item xs={12} lg={3} >
+                    <Grid item xs={12} >
                       <Grid container spacing={gridSpacing} isLoading={props.isLoading}>
-                        <Grid item xs={12} style={{paddingTop: "55px"}}>
+                        <Grid item xs={12} md={1} sx={{textAlign:"center"}}>
+                        </Grid>
+                        <Grid item xs={12} md={10} style={{paddingTop: "40px",paddingLeft: "0"}}>
+                          <LinearProgress id="batch-status-progress-bar" variant="determinate" value='16.7' sx={{width:'100%'}} />
+                          <style>{styleForLinearProgressMove}</style>
                           {/* <PreviousTxsCard isLoading={isLoading} /> */}
+                          <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                          - Step 1 “TX added to Batch”<br /> - Step 2 “Batch full - Sent batch to L2 bridge”<br /> - Step 3 “L2 bridge withdrawal finalized + sent funds to other L2 Bridge (NOTE, MAY REQUIRE CLAIM!! In beginning can pay percentage upchrage to user who claims, or to relayer)”<br /> - Step 4 “L2 bridge deposited funds to L2 escrow”<br />  - Step 5 “Funds ready to be claimed - Claim now or wait for someone else to initialize distribution of batch”<br />   - Step 6 “Done!”
+                          </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={1} sx={{textAlign:"center"}}>
                         </Grid>
                         
                       </Grid>
