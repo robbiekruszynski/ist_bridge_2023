@@ -1,10 +1,11 @@
 // ProfileSection.js
 import React, { useState, useRef, useEffect } from 'react';
-import { ethers } from 'ethers';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useTheme } from '@mui/material/styles';
-import WalletUtils from './walletUtils';
+import ConnectWallet from './connectWallet';
+
+
 
 import {
     Avatar,
@@ -84,7 +85,7 @@ const ProfileSection = () => {
 
   return (
     <>
-    <WalletUtils/>
+    <ConnectWallet />
       <Chip
         sx={{
           height: '48px',
