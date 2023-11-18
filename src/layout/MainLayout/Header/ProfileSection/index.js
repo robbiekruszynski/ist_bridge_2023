@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
-
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-
+import ConnectWallet from './ConnectWallet';
 // material-ui
 import { useTheme } from '@mui/material/styles';
 import {
@@ -89,6 +88,7 @@ const ProfileSection = () => {
 
   return (
     <>
+      <ConnectWallet/>
       <Chip
         sx={{
           height: '48px',
@@ -110,6 +110,7 @@ const ProfileSection = () => {
           }
         }}
         icon={
+      
           <Avatar
             src={User1}
             sx={{
