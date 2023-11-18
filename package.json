@@ -13,6 +13,7 @@
     "@mui/system": "^5.8.6",
     "@mui/utils": "^5.8.6",
     "@tabler/icons": "^1.72.0",
+    "@walletconnect/web3-provider": "^1.8.0",
     "apexcharts": "^3.35.3",
     "dotenv": "^16.3.1",
     "ethers": "^6.8.1",
@@ -31,6 +32,7 @@
     "react-router-dom": "6.3.0",
     "react-scripts": "^5.0.1",
     "redux": "^4.2.0",
+    "web3modal": "^1.9.12",
     "yup": "^0.32.11"
   },
   "scripts": {
