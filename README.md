@@ -34,7 +34,7 @@ SaferBridge is not a business, it is a public good. Outside of incentivizing the
 
 ## Ammortized Cost Per User
 
-While calldata goes up linearly with the size of the batch, the savings per user for bridging is <u>atleast</u> 38% cheaper per user (based on our extremely non scientific 2min test while running, admittedly rushed, through this hackathon). As the batch size increases, the fee for each user drops. 
+While calldata goes up linearly with the size of the batch, the savings per user for bridging is <u>atleast</u> 38% cheaper for each of 2 participants, 70% cheaper for each of 4 participants, and 80% cheaper for each of 10 participants (based on our extremely non scientific 5min test while running, admittedly rushed, through this hackathon). As the batch size increases, the fee for each user drops. 
 
 At the very least, this is still better UX than each user needing to sign many messages and enter many URLs, to bridge by themselves.
 
