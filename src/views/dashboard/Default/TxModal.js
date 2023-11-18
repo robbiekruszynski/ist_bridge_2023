@@ -166,7 +166,8 @@ export default function TransitionsModal(props) {
                             Step 5
                           </Typography>
                           <Typography id="transition-modal-description">
-                            Funds ready to be claimed - Claim now or wait for someone else to initialize distribution of batch <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /> <Button disabled variant="contained" color="primary">Claim</Button>
+                            Funds ready to be claimed - Claim now or wait for someone else to initialize distribution of batch <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /> 
+                            {/* <Button disabled variant="contained" color="primary">Claim</Button> */}
                           </Typography>
 
                           <Typography id="transition-modal-description" sx={{ mt: 2 }} variant="h4" component="h6">

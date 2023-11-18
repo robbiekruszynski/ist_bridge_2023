@@ -23,7 +23,8 @@ Safer Bridge does not require any relayers. Unlike other cross-chain bridges, wh
 
 1. Batch L2 -> L1 - Each person joining the batch pays an estimated gas fee + a surcharge incase gas price changes (+xx%). The last person joining the batch only pays estimated gas fee (no surcharge), and pushes the whole batch to the native L2 to L1 bridge. Effectively other users pre-pay for the extra cost incurred by the last person to join.
 2. Claim on L1 -> Send to L2 - Any person in the batch can trigger the claim & move from the first L2 bridge contract to the next one. This step can be incentivized, or simply rely on socio-economic factors of who needs the funds first.
-3. Distribute assets on L2 - The first person to claim the funds on the final location disburses all of the assets in the batch to all of the respective parties who were part of the batch. This step can be incentivized, or simply rely on socio-economic factors of who needs the funds first.
+3. Distribute assets on L2 - This is automatic & no manual interaction is needed. The L1 claim triggers L2 contract for distributing assets to batch members.
+<!-- The first person to claim the funds on the final location disburses all of the assets in the batch to all of the respective parties who were part of the batch. This step can be incentivized, or simply rely on socio-economic factors of who needs the funds first. -->
 
 While we could employ relayers (which would still be trustless, but need external actors), each of these steps were delibirately designed in SaferBridge to be user triggered and not rely on any external actors. The whole point of L2s was not to rely on cross-chain bridges or have additional trust assumptions. 'This is the way'.
 
@@ -31,7 +32,7 @@ While we could employ relayers (which would still be trustless, but need externa
 
 ## No Transaction Fees!
 
-SaferBridge is not a business, it is a public good. Outside of incentivizing the 3 steps above (which we hope L2s will subsidize in the future - see "The Future" section below), we designed SaferBridge to be completely 'free' for users outside of ammortized gas cost. The protocol itself will not charge any fee, there will not be any ponzi pretend governance token, and the contracts will be completely immutable without contract owners that can claim any excess surcharges.
+SaferBridge is not a business, it is a public good. Outside of incentivizing the 2 steps above (which we hope L2s will subsidize in the future - see "The Future" section below), we designed SaferBridge to be completely 'free' for users outside of ammortized gas cost. The protocol itself will not charge any fee, there will not be any ponzi pretend governance token, and the contracts will be completely immutable without contract owners that can claim any excess surcharges.
 
 ## Ammortized Cost Per User
 
