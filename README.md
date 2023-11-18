@@ -38,6 +38,8 @@ While calldata goes up linearly with the size of the batch, the savings per user
 
 At the very least, this is still better UX than each user needing to sign many messages and enter many URLs, to bridge by themselves.
 
+<img width="33%"  src="src/assets/images/readme/shitty-graph.jpg">
+
 ## The future
 
 We want L2s to fork this & build it into their native canonical bridges. While it is possible this bridge will need to remain external, this is not the future we hope for.
@@ -51,3 +53,13 @@ Any of the above 3 steps that currently rely on incentivization or socio-economi
 For USDC, instead of using the batching mechanism outline above, we would use Circles native <a href="https://www.circle.com/en/cross-chain-transfer-protocol" target="_blank">Cross-Chain Transfer Protocol (CCTP)</a>. Any centralized asset already entirely relies on the centralized party to mint & burn assets. Because of this, it makes more sense to use their canonical bridge.
 
 For all other assets (including USDT which doesn't have a native bridge), we use the batching mechanism outlined above.
+
+## Closing Thoughts
+
+Please for the love of Vitalik, do not use this code in live production. We were extremely sleep deprived and loopy while coding this project. It is not clean code, and fairly likely may contain exploits.
+
+That being said, please fork our project & make this work! We only programmed this after Daniel Lumi spent years trying to get teams to build this. We want this fucker to exist!
+
+<img width="33%"  src="src/assets/images/readme/thats-all.jpg">
+
+<b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">Caron (aka Tall Jesus)</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
