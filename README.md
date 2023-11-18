@@ -3,9 +3,9 @@
 # SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
 # ViaDuck <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-duck-bg.png"> - Trust Minimized L2 Bridge -->
-Unlike all other L2 to L2 cross chain bridges, SaferBridge transfers funds directly via L1 using the L2s native message passing, and doesn't rely on any relayers or LPs. Additionally, because of it's design, you can always force your transaction, and don't have to trust any 3rd party.
+Unlike all other L2 to L2 cross-chain bridges, SaferBridge transfers funds directly via L1 using the L2s native message passing, and doesn't rely on any relayers or LPs. Additionally, because of it's design, you can always force your transaction, and don't have to trust any 3rd party.
 
-We did not build L2 ecosystems to use cross chain bridges, the whole point was to maintain trust assumptions.
+We did not build L2 ecosystems to use 3rd party cross-chain bridges, the whole point was to maintain trust assumptions.
 
 ## What's Wrong With Current 3rd Party L2 Bridges?
 
@@ -19,13 +19,13 @@ In <b>Fast Speed</b> mode your transaction will submitted to the L2 bridge as so
 
 ## No Relayers & Minimal Trust Assumptions
 
-Safer Bridge does not require any relayers. Unlike other cross chain bridges, which rely on trusted actors, every single part of the bridging process is trustless outside of the existing trust assumptions of using a native L2 bridge (...or if we fuckup in the smart contract programming ;). 
+Safer Bridge does not require any relayers. Unlike other cross-chain bridges, which rely on trusted actors, every single part of the bridging process is trustless outside of the existing trust assumptions of using a native L2 bridge (...or if we fuckup in the smart contract programming ;). 
 
 1. Batch L2 -> L1 - Each person joining the batch pays an estimated gas fee + a surcharge incase gas price changes (+xx%). The last person joining the batch only pays estimated gas fee (no surcharge), and pushes the whole batch to the native L2 to L1 bridge. Effectively other users pre-pay for the extra cost incurred by the last person to join.
 2. Claim on L1 -> Send to L2 - Any person in the batch can trigger the claim & move from the first L2 bridge contract to the next one. This step can be incentivized, or simply rely on socio-economic factors of who needs the funds first.
 3. Distribute assets on L2 - The first person to claim the funds on the final location disburses all of the assets in the batch to all of the respective parties who were part of the batch. This step can be incentivized, or simply rely on socio-economic factors of who needs the funds first.
 
-While we could employ relayers (which would still be trustless, but need external actors), each of these steps were delibirately designed in SaferBridge to be user triggered and not rely on any external actors. The whole point of L2s was not to rely on cross chain bridges or have additional trust assumptions. 'This is the way'.
+While we could employ relayers (which would still be trustless, but need external actors), each of these steps were delibirately designed in SaferBridge to be user triggered and not rely on any external actors. The whole point of L2s was not to rely on cross-chain bridges or have additional trust assumptions. 'This is the way'.
 <img width="33%"  src="src/assets/images/readme/way-this-is-the-way.gif">
 
 ## No Transaction Fees!
