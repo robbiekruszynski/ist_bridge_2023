@@ -26,6 +26,7 @@ Safer Bridge does not require any relayers. Unlike other cross-chain bridges, wh
 3. Distribute assets on L2 - The first person to claim the funds on the final location disburses all of the assets in the batch to all of the respective parties who were part of the batch. This step can be incentivized, or simply rely on socio-economic factors of who needs the funds first.
 
 While we could employ relayers (which would still be trustless, but need external actors), each of these steps were delibirately designed in SaferBridge to be user triggered and not rely on any external actors. The whole point of L2s was not to rely on cross-chain bridges or have additional trust assumptions. 'This is the way'.
+
 <img width="33%"  src="src/assets/images/readme/way-this-is-the-way.gif">
 
 ## No Transaction Fees!
