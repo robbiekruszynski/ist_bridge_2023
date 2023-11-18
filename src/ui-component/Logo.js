@@ -19,10 +19,10 @@ const LogoSection = () => {
   // const dispatch = useDispatch();
   return (
     <span>
-      <img src={logo} alt="SaferBridge" height="40" style={{marginRight: 10 + 'px'}} />
+      <img src={logo} alt="SaferBridge" height="40" style={{marginRight: 10 + 'px',verticalAlign: 'middle'}} />
       {/* <ButtonBase disableRipple onClick={() => dispatch({ type: MENU_OPEN, id: defaultId })} component={Link} to={config.defaultPath}> */}
         {/* <Logo /> */}
-        <Typography variant="h1" style={{display: 'inline-block'}}>
+        <Typography variant="h1" style={{display: 'inline-block',verticalAlign: 'middle'}}>
           SaferBridge
         </Typography>
       {/* </ButtonBase> */}
