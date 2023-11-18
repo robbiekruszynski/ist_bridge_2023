@@ -1,4 +1,5 @@
-# SaferBridge <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo.png"> - Trust Minimized L2 Bridge
+<img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo.png">
+# SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
 # ViaDuck <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-duck-bg.png"> - Trust Minimized L2 Bridge -->
 Unlike all other L2 to L2 cross chain bridges, SaferBridge transfers funds directly via L1 using the L2s native message passing, and doesn't rely on any relayers or LPs. Additionally, because of it's design, you can always force your transaction, and don't have to trust any 3rd party.
