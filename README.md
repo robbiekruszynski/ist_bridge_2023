@@ -73,6 +73,7 @@ React, Redux, Routes, Ethers 5.7, MUI, Solidity, Wagmi / Viem
 ## Bounty Details 
 
 ## Closing Thoughts
+FILL IN 
 
 Please for the love of Vitalik, do not use this code in live production. We were extremely sleep deprived and loopy while coding this project. It is not clean code, and fairly likely may contain exploits.
 
