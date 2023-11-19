@@ -1,5 +1,11 @@
 <img width="25%"  src="src/assets/images/logo.png">
+<img width="25%"  src="src/assets/images/duck.png">
 
+
+
+## Note on the project 
+.github
+Added Remix (#65)
 # SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
 # ViaDuck <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-duck-bg.png"> - Trust Minimized L2 Bridge -->
@@ -84,4 +90,3 @@ That being said, please fork our project & make this work! We only programmed th
 <b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">Caron (aka Tall Jesus, aka The Rock with hair)</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
 
 
-I HATE YOU, LUMI 
