@@ -94,6 +94,6 @@ That being said, please fork our project & make this work! We only programmed th
 
 <img width="33%"  src="src/assets/images/readme/thats-all.jpg">
 
-<b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">CarOnFire</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
+<b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">Caron Schaller</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
 
 
