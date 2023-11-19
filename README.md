@@ -71,6 +71,7 @@ Notes: Due to the lack of time, for the demo, we currently withdrawal from Scrol
 React, Redux, Routes, Ethers 5.7, MUI, Solidity, Wagmi / Viem
 
 ## Closing Thoughts
+FILL IN 
 
 Please for the love of Vitalik, do not use this code in live production. We were extremely sleep deprived and loopy while coding this project. It is not clean code, and fairly likely may contain exploits.
 
