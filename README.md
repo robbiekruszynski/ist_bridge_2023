@@ -56,6 +56,23 @@ For USDC, instead of using the batching mechanism outline above, we would use Ci
 
 For all other assets (including USDT which doesn't have a native bridge), we use the batching mechanism outlined above.
 
+## Current State Of Project
+
+Currently we have demonstrated the ability to trigger all steps of the program, including ->
+
+1. Add transactions to a batch on the origin L2 contract 
+2. When batch is full, the contract can be triggered to send funds from L2 -> L1 using the native bridge, including bridged funds, and an address mapping in calldata (future todo: last person automatically trigers push of L2 -> L1 withdrawal transaction).
+3. When the L2 bridge withdrawal is finalized, any user can trigger a claim funds from origin L2 native bridge + send funds to the destination L2 native bridge. Both of these steps are triggered in one transaction, including claim of origin L2 funds from bridge, bridge to destination L2, and the function call to distribute funds on the destination L2 when the deposit is finalized.
+4. When deposited funds are finalized on the destination L2, the native origin bridge triggers the origin escrow contract. The contract uses the address mapping in the calldata to automatically distribute batched funds to all respective users (no manual actions are needed by users for this set of steps).
+
+Notes: Due to the lack of time, for the demo, we currently withdrawal from Scroll L2 -> L1, and then from L1 -> Scroll L2 rather than demonstrating this with two seperate L2s.
+
+## Tech Used
+React, Redux, Routes, Ethers 5.7, MUI, Solidity, Wagmi / Viem
+
+## Bounty Details 
+FILL IN 
+
 ## Closing Thoughts
 
 Please for the love of Vitalik, do not use this code in live production. We were extremely sleep deprived and loopy while coding this project. It is not clean code, and fairly likely may contain exploits.
@@ -64,4 +81,4 @@ That being said, please fork our project & make this work! We only programmed th
 
 <img width="33%"  src="src/assets/images/readme/thats-all.jpg">
 
-<b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">Caron (aka Tall Jesus)</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
+<b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">Caron (aka Tall Jesus, aka The Rock with hair)</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
