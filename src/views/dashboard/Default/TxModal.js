@@ -131,7 +131,7 @@ export default function TransitionsModal(props) {
                         <Grid item xs={12} md={1} sx={{textAlign:"center"}}>
                         </Grid>
                         <Grid item xs={12} md={10} style={{paddingTop: "40px",paddingLeft: "0"}}>
-                          <LinearProgress id="batch-status-progress-bar" variant="determinate" value='16.7' sx={{width:'100%'}} />
+                          <LinearProgress id="batch-status-progress-bar" variant="determinate" value='17' sx={{width:'100%'}} />
                           <style>{styleForLinearProgressMove}</style>
                           {/* <PreviousTxsCard isLoading={isLoading} /> */}
                           <Typography id="transition-modal-description" sx={{ mt: 4 }} variant="h4" component="h6">
