@@ -3,7 +3,7 @@
 
 <img class="image-align-left" img width="25%"  src="src/assets/images/logo.png"/><img class="image-align-left"  img width="25%"  src="src/assets/images/duck.gif"/>
 
-## Note on the project 
+### Note on the project 
 .github Added Remix (#65) commit is due to using a common template for MUI (Berry). This project outside of utalizing a free and open dashboard framework was built in house during the 2023 EthGlobal Istanbul Hackathon.
 
 # SaferBridge - Trust Minimized L2 Bridge
