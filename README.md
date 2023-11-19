@@ -61,7 +61,7 @@ For all other assets (including USDT which doesn't have a native bridge), we use
 Currently we have demonstrated the ability to trigger all steps of the program, including ->
 
 1. Add transactions to a batch on the origin L2 contract 
-2. When batch is full, the contract can be triggered to send funds from L2->L1 using the native bridge, including bridged funds, and an address mapping in calldata (future todo: last person automatically trigers push of L2->L1 withdrawal transaction).
+2. When batch is full, the contract can be triggered to send funds from L2 -> L1 using the native bridge, including bridged funds, and an address mapping in calldata (future todo: last person automatically trigers push of L2 -> L1 withdrawal transaction).
 3. When the L2 bridge withdrawal is finalized, any user can trigger a claim funds from origin L2 native bridge + send funds to the destination L2 native bridge. Both of these steps are triggered in one transaction, including claim of origin L2 funds from bridge, bridge to destination L2, and the function call to distribute funds on the destination L2 when the deposit is finalized.
 4. When deposited funds are finalized on the destination L2, the native origin bridge triggers the origin escrow contract. The contract uses the address mapping in the calldata to automatically distribute batched funds to all respective users (no manual actions are needed by users for this set of steps).
 
