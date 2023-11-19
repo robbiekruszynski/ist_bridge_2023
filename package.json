@@ -12,6 +12,7 @@
     "@mui/material": "^5.8.6",
     "@mui/system": "^5.8.6",
     "@mui/utils": "^5.8.6",
+    "@pushprotocol/uiembed": "^0.3.0",
     "@tabler/icons": "^1.72.0",
     "@web3modal/ethers5": "^3.3.2",
     "apexcharts": "^3.35.3",
