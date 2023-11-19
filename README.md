@@ -1,4 +1,10 @@
-<img width="25%"  src="src/assets/images/logo.png">
+<!-- <img width="25%"  src="src/assets/images/logo.png">
+<img width="25%"  src="src/assets/images/duck.gif"> -->
+
+<img class="image-align-left" img width="25%"  src="src/assets/images/logo.png"/><img class="image-align-left"  img width="25%"  src="src/assets/images/duck.gif"/>
+
+### Note on the project 
+.github Added Remix (#65) commit is due to using a common template for MUI (Berry). This project outside of utalizing a free and open dashboard framework was built in house during the 2023 EthGlobal Istanbul Hackathon.
 
 # SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
@@ -72,10 +78,6 @@ Notes: Due to the lack of time, for the demo, we currently withdraw from Sepolia
 ## Tech Used
 React, Redux, Routes, Ethers 5.7, MUI, Solidity, Wagmi / Viem
 
-## Bounty Details 
-* Scroll
-* NounsDAO
-
 ## Closing Thoughts
 
 Please for the love of Vitalik, do not use this code in live production. We were extremely sleep deprived and loopy while coding this project. It is not clean code, and fairly likely may contain exploits.
@@ -85,3 +87,5 @@ That being said, please fork our project & make this work! We only programmed th
 <img width="33%"  src="src/assets/images/readme/thats-all.jpg">
 
 <b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">Caron (aka Tall Jesus, aka The Rock with hair)</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
+
+

@@ -1,15 +1,7 @@
 import { useEffect, useState } from 'react';
-
 // material-ui
 import { Grid, FormControl } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-// project imports
-// import FromCard from './FromCardClass';
-// import ToCard from './ToCardClass';
-// import PopularCard from './PopularCard';
-// import TotalOrderLineChartCard from './TotalOrderLineChartCard';
-// import TotalIncomeDarkCard from './TotalIncomeDarkCard';
-// import TotalIncomeLightCard from './TotalIncomeLightCard';
 import MethodCard from './MethodCard';
 // import DashboardHeading from './DashboardHeading';
 import { gridSpacing } from 'store/constant';
@@ -70,26 +62,6 @@ const Dashboard = () => {
         </Grid>
         
       </Grid>
-      {/* <Grid item lg={4} md={12} sm={12} xs={12}>
-                    <Grid container spacing={gridSpacing}>
-                        <Grid item sm={6} xs={12} md={6} lg={12}>
-                        <TotalIncomeDarkCard isLoading={isLoading} />
-                        </Grid>
-                        <Grid item sm={6} xs={12} md={6} lg={12}>
-                        <TotalIncomeLightCard isLoading={isLoading} />
-                        </Grid>
-                    </Grid>
-                </Grid> */}
-      {/* <Grid item xs={12}>
-        <Grid container spacing={gridSpacing} isLoading={isLoading}>
-          <Grid item xs={12} md={8}>
-             <MethodCard isLoading={isLoading} /> 
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <PopularCard isLoading={isLoading} />
-          </Grid>
-        </Grid>
-      </Grid> */}
     </Grid>
     </FormControl>
     </form>
