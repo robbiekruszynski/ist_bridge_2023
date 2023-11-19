@@ -1,11 +1,10 @@
 <!-- <img width="25%"  src="src/assets/images/logo.png">
 <img width="25%"  src="src/assets/images/duck.gif"> -->
 
-<img class="image-align-left" src="src/assets/images/logo.png"/><img class="image-align-left" src="src/assets/images/duck.gif"/>
+<img class="image-align-left" img width="25%"  src="src/assets/images/logo.png"/><img class="image-align-left"  img width="25%"  src="src/assets/images/duck.gif"/>
 
 ## Note on the project 
-.github
-Added Remix (#65)
+.github Added Remix (#65) commit is due to using a common template for MUI (Berry). This project outside of utalizing a free and open dashboard framework was built in house during the 2023 EthGlobal Istanbul Hackathon.
 
 # SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
