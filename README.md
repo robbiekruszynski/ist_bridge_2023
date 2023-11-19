@@ -1,5 +1,5 @@
 <img width="25%"  src="src/assets/images/logo.png">
-<img width="25%"  src="src/assets/images/duck.png">
+<img width="25%"  src="src/assets/images/duck.gif">
 
 
 
