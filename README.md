@@ -6,6 +6,19 @@
 ### Note on the project 
 .github Added Remix (#65) commit is due to using a common template for MUI (Berry). This project outside of utalizing a free and open dashboard framework was built in house during the 2023 EthGlobal Istanbul Hackathon.
 
+```
+git clone https://github.com/Robbiekruszynski/ist_bridge_2023.git
+```
+```
+cd ist_bridge_2023
+```
+```
+yarn
+```
+```
+yarn start
+```
+
 # SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
 # ViaDuck <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-duck-bg.png"> - Trust Minimized L2 Bridge -->
