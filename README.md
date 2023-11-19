@@ -64,14 +64,16 @@ For all other assets (including USDT which doesn't have a native bridge), we use
 
 ## Current State Of Project
 
+<img width="33%"  src="src/assets/images/readme/current-state.png">
+
 Currently we have demonstrated the ability to trigger all steps of the program, including ->
 
-1. Add transactions to a batch on the origin L2 contract 
-2. When batch is full, the contract can be triggered to send funds from L2 -> L1 using the native bridge, including bridged funds, and an address mapping in calldata (future todo: last person automatically trigers push of L2 -> L1 withdrawal transaction).
-3. When the L2 bridge withdrawal is finalized, any user can trigger a claim funds from origin L2 native bridge + send funds to the destination L2 native bridge. Both of these steps are triggered in one transaction, including claim of origin L2 funds from bridge, bridge to destination L2, and the function call to distribute funds on the destination L2 when the deposit is finalized.
-4. When deposited funds are finalized on the destination L2, the native origin bridge triggers the origin escrow contract. The contract uses the address mapping in the calldata to automatically distribute batched funds to all respective users (no manual actions are needed by users for this set of steps).
+1. Users looking to bridge from L2-a to L2-b can add their transactions to a batch on the origin L2 contract. A mapping of addresses to funds ensures that funds will be given back to their original senders. As this mapping needs to be read on the destination L2 contract, we encode addresses with respective deposits iteratively for each depositor and pass it through the nether.
+2. When the batch reaches significant mass, the BridgeConverge contract can be triggered to send funds from L2 -> L1 using the native bridge, including bridged funds, and an address mapping in calldata, from which the destination state can be rebuilt 
+3. When the L2 bridge withdrawal is finalized with the use of a proof, the funds are pooled in the BridgeTroll contract on L1. Any user can trigger the move from L1 to the destination L2 via its native bridge. Both of these steps are triggered in one transaction, including claim of origin L2 funds from bridge, bridge to destination L2, and the function call to distribute funds back to all users on the destination L2 when the deposit is finalized.
+4. With funds now successfully deposited in user accounts on the destination chain, the original mapping is cleared and the SaferBridge reopens for business. To save on complexity while on L1, the contract is fully depleted with every pass, meaning that only one batch of transfers can be active at a time.
 
-Notes: Due to the lack of time, for the demo, we currently withdrawal from Scroll L2 -> L1, and then from L1 -> Scroll L2 rather than demonstrating this with two seperate L2s.
+Notes: Due to the lack of time, for the demo, we currently withdraw from Sepolia Scroll L2 -> Sepolia L1 and then back from Sepolia L1 -> Sepolia Scroll L2 rather than demonstrating this with two seperate L2s.
 
 ## Tech Used
 React, Redux, Routes, Ethers 5.7, MUI, Solidity, Wagmi / Viem
