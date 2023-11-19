@@ -9,14 +9,8 @@
 
 ```
 git clone https://github.com/Robbiekruszynski/ist_bridge_2023.git
-```
-```
 cd ist_bridge_2023
-```
-```
 yarn
-```
-```
 yarn start
 ```
 
