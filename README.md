@@ -75,4 +75,4 @@ That being said, please fork our project & make this work! We only programmed th
 
 <img width="33%"  src="src/assets/images/readme/thats-all.jpg">
 
-<b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">Caron (aka Tall Jesus)</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
+<b>Created by</b> - <a href="https://github.com/caronsch" target="_blank">Caron (aka Tall Jesus, aka The Rock with hair)</a>, <a href="https://github.com/Robbiekruszynski" target="_blank">Robbie Kruszynski</a>, <a href="https://twitter.com/zkLumi" target="_blank">Daniel Lumi (@zkLumi)</a>
