@@ -1,15 +1,7 @@
 import { useEffect, useState } from 'react';
-
 // material-ui
 import { Grid, FormControl } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-// project imports
-// import FromCard from './FromCardClass';
-// import ToCard from './ToCardClass';
-// import PopularCard from './PopularCard';
-// import TotalOrderLineChartCard from './TotalOrderLineChartCard';
-// import TotalIncomeDarkCard from './TotalIncomeDarkCard';
-// import TotalIncomeLightCard from './TotalIncomeLightCard';
 import MethodCard from './MethodCard';
 // import DashboardHeading from './DashboardHeading';
 import { gridSpacing } from 'store/constant';

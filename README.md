@@ -1,6 +1,5 @@
-<img width="25%"  src="src/assets/images/logo.png">
-<img width="25%"  src="src/assets/images/duck.gif">
-
+<img width="50%"  src="src/assets/images/logo.png">
+<img width="50%"  src="src/assets/images/duck.gif">
 
 
 ## Note on the project 
