@@ -164,6 +164,8 @@ export default class ToCard extends Component {
                                 fontSize: '1rem',
                                 fontWeight: 500,
                                 color: this.props.networks[this.state.chain].colors.text.primaryLight,
+                                defaultValue:  'Not connected',
+                                value: this.state.walletAddress,
                                 width: "50%",
                                 verticalAlign: "baseline"
                             }} placeholder="0x..." defaultValue="0x2d0Df096b42c9ff55E71E57250A47D2D0551d7Fb" variant="standard" />
