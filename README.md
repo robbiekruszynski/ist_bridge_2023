@@ -67,8 +67,10 @@ Currently we have demonstrated the ability to trigger all steps of the program, 
 
 Notes: Due to the lack of time, for the demo, we currently withdrawal from Scroll L2 -> L1, and then from L1 -> Scroll L2 rather than demonstrating this with two seperate L2s.
 
-## Tech used 
+## Tech Used
 React, Redux, Routes, Ethers 5.7, MUI, Solidity, Wagmi / Viem
+
+## Bounty Details 
 
 ## Closing Thoughts
 
