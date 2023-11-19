@@ -145,33 +145,33 @@ export default function TransitionsModal(props) {
                             Step 2
                           </Typography>
                           <Typography id="transition-modal-description">
-                            Batch full - Sent batch to L2 bridge <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" />
+                            Batch full - Send batch to L2 bridge <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" />  <Button disabled variant="contained" color="primary">Push</Button>
                           </Typography>
 
                           <Typography id="transition-modal-description" sx={{ mt: 2 }} variant="h4" component="h6">
                             Step 3
                           </Typography>
                           <Typography id="transition-modal-description">
-                            L2 bridge withdrawal finalized, send funds to other L2 Bridge or wait for someone else to initialize <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /> <Button disabled variant="contained" color="primary">Claim</Button>
+                            L2 bridge withdrawal finalized. Claim funds + batch to other L2 Bridge with calldata<br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /> <Button disabled variant="contained" color="primary">Claim & Send</Button>
                           </Typography>
 
                           <Typography id="transition-modal-description" sx={{ mt: 2 }} variant="h4" component="h6">
                             Step 4
                           </Typography>
                           <Typography id="transition-modal-description">
-                            L2 bridge deposited funds to L2 escrow <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" />
+                            L2 bridge deposited funds to L2 escrow, and automatically distributed to batchoors <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" />
                           </Typography>
 
-                          <Typography id="transition-modal-description" sx={{ mt: 2 }} variant="h4" component="h6">
+                          {/* <Typography id="transition-modal-description" sx={{ mt: 2 }} variant="h4" component="h6">
                             Step 5
                           </Typography>
                           <Typography id="transition-modal-description">
                             Funds ready to be claimed - Claim now or wait for someone else to initialize distribution of batch <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /> 
-                            {/* <Button disabled variant="contained" color="primary">Claim</Button> */}
-                          </Typography>
+                       
+                          </Typography> */}
 
                           <Typography id="transition-modal-description" sx={{ mt: 2 }} variant="h4" component="h6">
-                            Step 6
+                            Step 5
                           </Typography>
                           <Typography id="transition-modal-description">
                             Done! All funds bridged & distributed <br></br><RadioButtonUncheckedIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /><RocketLaunchIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /><CelebrationIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" /><CelebrationIcon sx={{ verticalAlign: 'middle' }} fontSize="medium" />

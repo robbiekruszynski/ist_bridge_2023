@@ -11,6 +11,7 @@ import { Typography } from '@mui/material';
 // import Logo from 'ui-component/Logo';
 // import { MENU_OPEN } from 'store/actions';
 import logo from 'assets/images/logo.png';
+import nounsGlasses from 'assets/images/nouns.png';
 
 // ==============================|| MAIN LOGO ||============================== //
 
@@ -26,6 +27,7 @@ const LogoSection = () => {
           SaferBridge
         </Typography>
       {/* </ButtonBase> */}
+      <img src={nounsGlasses} alt="Nouns BS" width="20" style={{marginLeft: '-' + 15 + 'px',verticalAlign: 'middle'}} />
     </span>
   );
 };
