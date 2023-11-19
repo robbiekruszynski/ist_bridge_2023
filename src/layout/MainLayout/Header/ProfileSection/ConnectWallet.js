@@ -1,14 +1,15 @@
-
-
-import { useWeb3Modal } from '@web3modal/ethers5/react'
+import React from 'react';
+import { useWeb3Modal } from '@web3modal/ethers5/react';
+import Button from '@mui/material/Button'; // Import MUI Button
 
 export default function ConnectButton() {
-  // 4. Use modal hook
-  const { open } = useWeb3Modal()
+  const { open } = useWeb3Modal();
 
   return (
     <>
-      <button onClick={() => open()}>Connect Wallet</button>
+      <Button variant="contained" color="primary" onClick={() => open()}>
+        Connect Wallet
+      </Button>
     </>
-  )
+  );
 }
