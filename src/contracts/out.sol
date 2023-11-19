@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.16;
 
-import "@scroll-tech/contracts@0.1.0/libraries/IScrollMessenger.sol";
-
 contract BridgeDiverge {
     // Variable to store the encoded data for disbursal
     bytes public encodedData;
