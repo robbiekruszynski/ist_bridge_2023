@@ -23,7 +23,7 @@ async function addFundsToContract() {
 
     // Contract details
     const contractAddress = 'YOUR_CONTRACT_ADDRESS'; // Replace with your contract's address
-    const contractABI = [...] // Replace with your contract's ABI
+    const contractABI = [...] // Replace with your contract's ABI // <--------------------------ERROR FOUND HERE 
 
     // Create a contract instance with the wallet
     const contract = new ethers.Contract(contractAddress, contractABI, wallet);
