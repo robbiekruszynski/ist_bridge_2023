@@ -1,10 +1,12 @@
-<img width="50%"  src="src/assets/images/logo.png">
-<img width="50%"  src="src/assets/images/duck.gif">
+<!-- <img width="25%"  src="src/assets/images/logo.png">
+<img width="25%"  src="src/assets/images/duck.gif"> -->
 
+<img class="image-align-left" src="src/assets/images/logo.png"/><img class="image-align-left" src="src/assets/images/duck.gif"/>
 
 ## Note on the project 
 .github
 Added Remix (#65)
+
 # SaferBridge - Trust Minimized L2 Bridge
 <!-- # Via <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-via.png"> - Trust Minimized L2 Bridge
 # ViaDuck <img width=24 height=24 style="margin-left:-20px" src="src/assets/images/logo-duck-bg.png"> - Trust Minimized L2 Bridge -->
@@ -74,9 +76,6 @@ Notes: Due to the lack of time, for the demo, we currently withdrawal from Scrol
 
 ## Tech Used
 React, Redux, Routes, Ethers 5.7, MUI, Solidity, Wagmi / Viem
-
-## Bounty Details 
-FILL IN 
 
 ## Closing Thoughts
 
